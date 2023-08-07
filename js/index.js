@@ -17,6 +17,7 @@ fetch("json/portfolio.json")
 
 function addProjects() {
   // retrieve json and format to web page
+  const out = "";
 }
 
 document.querySelector(".form").addEventListener("submit", handleSubmit);
