@@ -25,8 +25,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
       rel="stylesheet"
     />
 
@@ -46,28 +48,66 @@
       <h2>Fintan Hardy</h2>
 
       <nav class="navbar">
-        <a href="#" class="navbar-link">Home</a>
-        <a href="#" class="navbar-link">About</a>
-        <a href="#" class="navbar-link">Portfolio</a>
-        <a href="#" class="navbar-link">Blog</a>
-        <a href="#" class="navbar-link">Contact</a>
+        <a href="#home" class="navbar-link">Home</a>
+        <a href="#about" class="navbar-link">About</a>
+        <a href="#portfolio" class="navbar-link">Portfolio</a>
+        <a href="#blog" class="navbar-link">Blog</a>
+        <a href="#contact" class="navbar-link">Contact</a>
       </nav>
     </header>
 
-    <div class="welcome-page">
+    <div class="welcome-page" id="home">
+      <div class="wp-content">
+        <h1>Welcome to My Web Page!</h1>
+        <h3>
+          My name is Fintan and I am currently training to be a fullstack
+          devloper!
+        </h3>
+      </div>
+
       <a href="#" class="chevron" onclick="scrollToTop()">
         <i class="fa-solid fa-chevron-down"></i>
       </a>
     </div>
 
-    <div class="about-me">
-      <h1>About me</h1>
+    <div class="section">
+      <div class="about-me" id="about">
+        <h1>About me</h1>
+        <p>
+          My name is Fintan and I am a recent graduate in Chemical Engineering
+          from the university of Manchester. I am now currently on the iO
+          academy course and training to be a fullstack devloper.
+        </p>
+        <p>
+          I also have a keen interest in AI and the emerging technologies from
+          that area. Please have a look at my portfolio projects and blogs!
+        </p>
+      </div>
     </div>
 
-    <div class="portfolio"></div>
+    <div class="section">
+      <div class="portfolio" id="portfolio">
+        <h1>My Portfolio</h1>
+      </div>
+    </div>
 
-    <div class="blogs"></div>
+    <div class="section">
+      <div class="blogs" id="blog"></div>
+    </div>
 
-    <footer class="footer"></footer>
+    <div class="section">
+      <form action="submit"></form>
+    </div>
+
+    <footer class="footer">
+      <div class="sm-links">
+        <a href="https://github.com/Natniif"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+        <a href="https://www.linkedin.com/in/fintanhardy/"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+      </div>
+    </footer>
   </body>
 </html>

@@ -1,4 +1,3 @@
-# website-template
-This template can be used as the basis of new websites.
+# Portfolio website
 
-You can download the zip file, unzip/decompress it, copy the whole folder and rename it.
+This is the source code for my portfolio website to display my work and
