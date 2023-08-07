@@ -3,3 +3,42 @@
 *::after {
   box-sizing: border-box;
 }
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #84b5cb;
+}
+
+body h2 {
+  padding: 0 20px;
+}
+
+.header {
+  display: flex;
+  margin-top: 0;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar {
+  padding: 0 10px;
+}
+
+.navbar-link {
+  padding: 0 5px;
+}
+
+/* --------------- Main welcome page -----------------*/
+.welcome-page {
+  width: 100vw;
+  height: 100vh;
+}
+
+.chevron {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 50px;
+  color: black;
+}
