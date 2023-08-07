@@ -6,7 +6,8 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background-color: #84b5cb;
+  /* background-color: #84b5cb; */
+  background-color: white;
 }
 
 body h2 {
@@ -22,6 +23,7 @@ body h2 {
   margin-top: 0;
   justify-content: space-between;
   align-items: center;
+  background-color: white;
 }
 
 .navbar {
@@ -71,14 +73,59 @@ body h2 {
   width: 65vw;
 }
 /* --------------- Contact Me -----------------*/
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0;
+}
 
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50vw;
+  background-color: #c3b1e1;
+  border-radius: 20px;
+}
+
+#email {
+  background-color: #c3b1e1;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+}
+
+#message {
+  background-color: #c3b1e1;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+}
+
+#submit {
+  padding: 5px 15px;
+  margin: 10px;
+  color: white;
+  background-color: darkcyan;
+  border-radius: 10px;
+}
 /* --------------- Footer -----------------*/
 
 footer {
-  border-top: 10px;
+  border-top: 1px solid #aaaaaa;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
+  padding-top: 10px;
+}
+
+footer p {
+  font-size: 20px;
+  display: inline;
 }
 
 .sm-links {
