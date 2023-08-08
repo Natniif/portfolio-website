@@ -39,7 +39,7 @@ body a {
   background-color: #daedff;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1000px) {
   .header {
     display: flex;
     flex-direction: column;
@@ -52,6 +52,11 @@ body a {
     margin: 0 auto;
   }
 
+  .welcome-page {
+    max-width: 80vw;
+    margin: 0 auto;
+  }
+
   .portfolio {
     width: 100vw;
     display: flex;
@@ -59,8 +64,17 @@ body a {
     margin: 0 auto;
   }
 
+  /* Need to get rid of the !important by being more specific with selector */
+  .port-img-div {
+    display: none !important;
+  }
+
+  .port-text-div {
+    padding-left: 0 !important;
+  }
+
   .port-out {
-    display: none;
+    padding: 0 !important;
   }
 }
 
@@ -74,6 +88,10 @@ body a {
 
 .navbar-link:hover {
   color: #c3b1e1;
+}
+
+.header {
+  max-width: 100%;
 }
 
 /* --------------- Main welcome page -----------------*/
@@ -139,6 +157,7 @@ a.anchor {
 
 .port-text-div {
   display: flex;
+  max-width: 65vw;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
@@ -156,7 +175,6 @@ a.anchor {
 .blog-out {
   gap: 10px;
   display: flex;
-  padding-left: 10px;
 }
 
 /* --------------- Contact Me -----------------*/
@@ -165,6 +183,7 @@ a.anchor {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  max-width: 100vw;
   padding-top: 30px;
 }
 
@@ -173,7 +192,7 @@ a.anchor {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  width: 100vw;
+  width: 100%;
   background-color: #c3b1e1;
   padding-top: 20px;
   padding-left: 20px;
