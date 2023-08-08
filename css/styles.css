@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-/* background-color: #84b5cb; */
+/* Other cool background colour: #84b5cb; */
 body {
   font-family: "Poppins", sans-serif;
   background-color: white;
@@ -37,6 +37,31 @@ body a {
   justify-content: space-between;
   align-items: center;
   background-color: #daedff;
+}
+
+@media screen and (max-width: 500px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .section {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  .portfolio {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  .port-out {
+    display: none;
+  }
 }
 
 .navbar {
@@ -87,7 +112,7 @@ body a {
 a.anchor {
   display: block;
   position: relative;
-  top: -50px;
+  top: -70px;
   visibility: hidden;
 }
 
@@ -140,7 +165,7 @@ a.anchor {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 30px 0;
+  padding-top: 30px;
 }
 
 .form {
@@ -148,10 +173,11 @@ a.anchor {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  width: 65vw;
+  width: 100vw;
   background-color: #c3b1e1;
-  border-radius: 20px;
-  padding: 20px;
+  padding-top: 20px;
+  padding-left: 20px;
+  overflow: hidden;
 }
 
 #email {
