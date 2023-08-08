@@ -27,8 +27,8 @@ function addProjects(project) {
       <div class="port-img-div" 
         style="background-image: url('${project.img}')"
       ></div>
-      <div>
-        <h2>${project.name}</h3>
+      <div class="port-text-div">
+        <h2>${project.name}</h2>
         <p>${project.desc}</p>
       </div>
     </div>
