@@ -2,3 +2,4 @@
 /.idea
 /node_modules
 /vendor
+.tailwind.config.js
