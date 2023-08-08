@@ -49,7 +49,6 @@ rules:
   no-var: error
   prefer-const: warn
   arrow-spacing: warn
-  indent: warn
   no-dupe-else-if: warn
   no-dupe-args: error
 
