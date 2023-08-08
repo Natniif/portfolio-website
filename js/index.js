@@ -17,6 +17,27 @@ fetch("json/portfolio.json")
     });
   });
 
+fetch("json/blog.json")
+  .then((response) => {
+    return response.json();
+  })
+  .then((data) => {
+    const output = document.querySelector(".blog-out");
+    data.Blogs.forEach((post) => {
+      const out = addBlog(post);
+      output.innerHTML += out;
+    });
+  });
+
+function addBlog(post) {
+  let out = "";
+  out += `<a href="${post.link}">${post.name}</a> 
+  <p>Date Added: ${post.date}</p>
+  `;
+
+  return out;
+}
+
 function addProjects(project) {
   // retrieve json and format to web page
 
@@ -30,6 +51,7 @@ function addProjects(project) {
       <div class="port-text-div">
         <h2>${project.name}</h2>
         <p>${project.desc}</p>
+        <a href="${project.link}">GitHub link to Project</a>
       </div>
     </div>
   `;

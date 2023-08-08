@@ -3,7 +3,8 @@
     {
       "name": "Portfolio website",
       "img": "https://static.vecteezy.com/system/resources/previews/002/993/866/original/a-man-working-on-laptop-to-development-web-coding-and-apps-free-vector.jpg",
-      "desc": "A portfolio website that I started whilst doing my course at iO academy"
+      "desc": "A portfolio website that I started whilst doing my course at iO academy",
+      "link": "https://github.com/Natniif/portfolio-website"
     }
   ]
 }
