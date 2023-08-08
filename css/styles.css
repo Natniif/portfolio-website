@@ -84,6 +84,13 @@ body a {
   margin: 0 auto;
 }
 
+a.anchor {
+  display: block;
+  position: relative;
+  top: -50px;
+  visibility: hidden;
+}
+
 .port-out {
   padding: 20px;
 }
@@ -109,6 +116,7 @@ body a {
 .port-text-div {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
 }
 
 .blogs {
@@ -137,11 +145,12 @@ body a {
 .form {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 50vw;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 65vw;
   background-color: #c3b1e1;
   border-radius: 20px;
+  padding: 20px 20px;
 }
 
 #email {

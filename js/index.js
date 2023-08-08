@@ -1,5 +1,5 @@
 function scrollToTop() {
-  const div = document.querySelector(".about-me");
+  const div = document.querySelector("a.anchor");
   div.scrollIntoView({ behavior: "smooth" });
 }
 
@@ -39,10 +39,7 @@ function addBlog(post) {
 }
 
 function addProjects(project) {
-  // retrieve json and format to web page
-
   let out = "";
-
   out += `
     <div class="port-div">
       <div class="port-img-div" 
