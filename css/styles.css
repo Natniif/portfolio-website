@@ -10,6 +10,17 @@ body {
   background-color: white;
 }
 
+body h1 {
+  font-size: 34px;
+}
+
+body h2 {
+  font-size: 24px;
+}
+
+body h3 {
+  font-size: 19px;
+}
 body h2 {
   padding: 0 20px;
 }
@@ -27,11 +38,15 @@ body h2 {
 }
 
 .navbar {
-  padding: 0 10px;
+  padding: 15px 10px;
 }
 
 .navbar-link {
-  padding: 0 5px;
+  padding: 10px 5px;
+}
+
+.navbar-link:hover {
+  color: #c3b1e1;
 }
 
 /* --------------- Main welcome page -----------------*/
@@ -72,6 +87,32 @@ body h2 {
 .potfolio {
   width: 65vw;
 }
+
+.port-out {
+  padding: 20px;
+}
+
+.port-div {
+  display: flex;
+  justify-content: space-between;
+  gap: 4px;
+}
+
+.port-img-div {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 10px;
+
+  display: flex;
+  justify-content: center;
+}
+
+.port-text-div {
+  display: flex;
+  flex-direction: column;
+}
+
 /* --------------- Contact Me -----------------*/
 .contact {
   display: flex;
@@ -93,6 +134,7 @@ body h2 {
 
 #email {
   background-color: #c3b1e1;
+  border: 3px solid #b19cd9;
   border-radius: 5px;
   padding: 10px;
   margin: 10px;
@@ -100,13 +142,14 @@ body h2 {
 
 #message {
   background-color: #c3b1e1;
+  border: 3px solid #b19cd9;
   border-radius: 5px;
   padding: 10px;
   margin: 10px;
 }
 
 #submit {
-  padding: 5px 15px;
+  padding: 10px 15px;
   margin: 10px;
   color: white;
   background-color: darkcyan;

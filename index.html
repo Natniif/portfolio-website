@@ -9,6 +9,8 @@
     <meta name="description" content="Template HTML file" />
     <meta name="author" content="iO Academy" />
 
+    <script src="https://cdn.tailwindcss.com"></script>
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
@@ -19,12 +21,6 @@
     <link rel="shortcut icon" href="images/favicon.png" />
     <link rel="apple-touch-icon" href="images/favicon.png" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -50,6 +46,7 @@
       <nav class="navbar">
         <a href="#home" class="navbar-link">Home</a>
         <a href="#about" class="navbar-link">About</a>
+        <a href="images/cv_21122022.pdf">CV</a>
         <a href="#portfolio" class="navbar-link">Portfolio</a>
         <a href="#blog" class="navbar-link">Blog</a>
         <a href="#contact" class="navbar-link">Contact</a>
@@ -65,7 +62,7 @@
         </h3>
       </div>
 
-      <a href="#" class="chevron" onclick="scrollToTop()">
+      <a href="#" class="chevron">
         <i class="fa-solid fa-chevron-down"></i>
       </a>
     </div>
@@ -78,9 +75,14 @@
           from the university of Manchester. I am now currently on the iO
           academy course and training to be a fullstack devloper.
         </p>
+        <p><br /></p>
         <p>
           I also have a keen interest in AI and the emerging technologies from
           that area. Please have a look at my portfolio projects and blogs!
+        </p>
+        <p><br /></p>
+        <p>
+          You can also find my CV <a href="images/cv_21122022.pdf">Here</a>.
         </p>
       </div>
     </div>
@@ -88,11 +90,18 @@
     <div class="section">
       <div class="portfolio" id="portfolio">
         <h1>My Portfolio</h1>
+          <div class="port-out">
+
+          </div>
+        
+        </div>
       </div>
     </div>
 
     <div class="section">
-      <div class="blogs" id="blog"></div>
+      <div class="blogs" id="blog">
+        <h1>My Blogs</h1>
+      </div>
     </div>
 
     <div class="contact">
@@ -104,7 +113,7 @@
         <label for="message">Message</label>
         <textarea id="message" cols="30" rows="3"></textarea>
 
-        <input type="submit" value="Submit" class="submit" />
+        <input type="submit" value="Submit" id="submit" />
       </form>
     </div>
 

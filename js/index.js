@@ -3,21 +3,37 @@ function scrollToTop() {
   div.scrollIntoView({ behavior: "smooth" });
 }
 
+document.querySelector(".chevron").addEventListener("click", scrollToTop);
+
 fetch("json/portfolio.json")
   .then((response) => {
     return response.json();
   })
   .then((data) => {
-    const output = document.querySelector(".portfolio");
-    data.project.forEach((project) => {
-      const out = addProjectsToPage(project);
+    const output = document.querySelector(".port-out");
+    data.Projects.forEach((project) => {
+      const out = addProjects(project);
       output.innerHTML += out;
     });
   });
 
-function addProjects() {
+function addProjects(project) {
   // retrieve json and format to web page
-  const out = "";
+
+  let out = "";
+
+  out += `
+    <div class="port-div">
+      <div class="port-img-div" 
+        style="background-image: url('${project.img}')"
+      ></div>
+      <div>
+        <h2>${project.name}</h3>
+        <p>${project.desc}</p>
+      </div>
+    </div>
+  `;
+  return out;
 }
 
 document.querySelector(".form").addEventListener("submit", handleSubmit);
