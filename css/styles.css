@@ -106,7 +106,6 @@ a.anchor {
   background-size: cover;
   background-position: center;
   padding: 10px;
-
   width: 400px;
   height: 400px;
   display: flex;
@@ -152,7 +151,7 @@ a.anchor {
   width: 65vw;
   background-color: #c3b1e1;
   border-radius: 20px;
-  padding: 20px 20px;
+  padding: 20px;
 }
 
 #email {
