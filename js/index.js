@@ -46,7 +46,7 @@ function addProjects(project) {
         style="background-image: url('${project.img}')"
       ></div>
       <div class="port-text-div">
-        <h2>${project.name}</h2>
+        <h3><strong>${project.name}</strong></h3>
         <p>${project.desc}</p>
         <a href="${project.link}">GitHub link to Project</a>
       </div>
