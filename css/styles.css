@@ -65,16 +65,16 @@ body a {
   }
 
   /* Need to get rid of the !important by being more specific with selector */
-  .port-img-div {
-    display: none !important;
+  div.port-img-div {
+    display: none;
   }
 
-  .port-text-div {
-    padding-left: 0 !important;
+  div.port-text-div {
+    padding-left: 0;
   }
 
-  .port-out {
-    padding: 0 !important;
+  div.port-out {
+    padding: 0;
   }
 }
 
