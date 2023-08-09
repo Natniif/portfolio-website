@@ -37,6 +37,7 @@ body a {
   justify-content: space-between;
   align-items: center;
   background-color: #daedff;
+  max-width: 100%;
 }
 
 @media screen and (max-width: 1000px) {
@@ -90,13 +91,9 @@ body a {
   color: #c3b1e1;
 }
 
-.header {
-  max-width: 100%;
-}
-
 /* --------------- Main welcome page -----------------*/
 .welcome-page {
-  width: 100vw;
+  width: 85vw;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -120,7 +117,7 @@ body a {
 /* --------------- Sections -----------------*/
 .section {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   padding: 30px 0;
   width: 65vw;
@@ -134,13 +131,17 @@ a.anchor {
   visibility: hidden;
 }
 
+.portfolio {
+  width: 65vw;
+}
+
 .port-out {
   padding: 20px;
 }
 
 .port-div {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   gap: 4px;
 }
 
