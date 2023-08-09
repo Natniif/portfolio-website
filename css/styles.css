@@ -15,8 +15,7 @@ body h1 {
 }
 
 body h2 {
-  font-size: 24px;
-  padding: 0 20px;
+  font-size: 30px;
 }
 
 body h3 {
@@ -33,11 +32,10 @@ body a {
   left: 0;
   right: 0;
   display: flex;
-  margin-top: 0;
   justify-content: space-between;
   align-items: center;
   background-color: #daedff;
-  max-width: 100%;
+  max-width: 100vw;
 }
 
 @media screen and (max-width: 1000px) {
@@ -117,9 +115,6 @@ body a {
 
 /* --------------- Sections -----------------*/
 .section {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
   padding: 30px 0;
   width: 65vw;
   margin: 0 auto;
@@ -153,32 +148,16 @@ a.anchor {
   padding: 10px;
   width: 400px;
   height: 400px;
-  display: flex;
-  justify-content: center;
 }
 
 .port-text-div {
-  display: flex;
   max-width: 65vw;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
   padding-left: 50px;
 }
 
 .blogs {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 10px;
+  margin: 10px;
   width: 100%;
-}
-
-.blog-out {
-  gap: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
 }
 
 /* --------------- Contact Me -----------------*/
@@ -201,6 +180,7 @@ a.anchor {
   border-radius: 5px;
   padding: 10px;
   margin: 10px;
+  width: 60%;
 }
 
 #message {
@@ -209,6 +189,7 @@ a.anchor {
   border-radius: 5px;
   padding: 10px;
   margin: 10px;
+  width: 70%;
 }
 
 #submit {
@@ -222,10 +203,6 @@ a.anchor {
 /* --------------- Footer -----------------*/
 footer {
   border-top: 1px solid #aaa;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
   padding-top: 10px;
   padding-left: 20px;
 }

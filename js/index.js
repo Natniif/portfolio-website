@@ -33,7 +33,7 @@ function addBlog(post) {
   let out = "";
   out += ` 
     <div class="flex gap-2"> 
-      <a href="${post.link}">${post.name}</a> 
+      <a href="${post.link}" target="_blank">${post.name}</a> 
       <p>Date Added: ${post.date}</p>
     </div>
   `;
@@ -51,7 +51,7 @@ function addProjects(project) {
       <div class="port-text-div">
         <h3><strong>${project.name}</strong></h3>
         <p>${project.desc}</p>
-        <a href="${project.link}">GitHub link to Project</a>
+        <a href="${project.link}" target="_blank">GitHub link to Project</a>
       </div>
     </div>
   `;
