@@ -31,8 +31,11 @@ fetch("json/blog.json")
 
 function addBlog(post) {
   let out = "";
-  out += `<a href="${post.link}">${post.name}</a> 
-  <p>Date Added: ${post.date}</p>
+  out += ` 
+    <div class="flex gap-2"> 
+      <a href="${post.link}">${post.name}</a> 
+      <p>Date Added: ${post.date}</p>
+    </div>
   `;
 
   return out;
