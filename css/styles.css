@@ -10,6 +10,10 @@ body {
   background-color: white;
 }
 
+header h2 {
+  padding-left: 10px;
+}
+
 body h1 {
   font-size: 34px;
 }
@@ -97,6 +101,10 @@ body a {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.typing-animation {
+  animation: typing 2s steps(40, end);
 }
 
 .chevron {

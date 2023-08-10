@@ -3,6 +3,30 @@ function scrollToTop() {
   div.scrollIntoView({ behavior: "smooth" });
 }
 
+// --------------------- Typing animation ------------------------
+const textElement1 = document.querySelector("#title");
+const textToType1 = "Welcome to My Web Page!";
+
+const textElement2 = document.querySelector("#title2");
+const textToType2 =
+  "My name is Fintan and I am currently training to be a fullstack developer!";
+
+function typeText(textEl, textTo, charIndex = 0) {
+  if (charIndex < textTo.length) {
+    textEl.textContent += textTo.charAt(charIndex);
+    charIndex++;
+    setTimeout(function () {
+      typeText(textEl, textTo, charIndex);
+    }, 35);
+  } else {
+    textEl.classList.add("typing-animation");
+  }
+}
+
+typeText(textElement1, textToType1);
+typeText(textElement2, textToType2);
+
+// --------------------- Chevron animation ------------------------
 document.querySelector(".chevron").addEventListener("click", scrollToTop);
 
 fetch("json/portfolio.json")
